@@ -168,7 +168,7 @@
 		// trigger 'resize.sidebar-lock' on $window so stuff doesn't get out of sync.
 
 			$window.on('load.sidebar-lock', function() {
-
+				console.log('Setup sidebar lock')
 				var sh, wh, st;
 
 				// Reset scroll position to 0 if it's 1.
@@ -177,7 +177,7 @@
 
 				$window
 					.on('scroll.sidebar-lock', function() {
-
+						console.log('Handle sidebar lock scroll');
 						var x, y;
 
 						// <=large? Bail.
@@ -221,7 +221,7 @@
 
 					})
 					.on('resize.sidebar-lock', function() {
-
+						console.log('Handle screen resize');
 						// Calculate heights.
 							wh = $window.height();
 							sh = $sidebar_inner.outerHeight() + 30;
