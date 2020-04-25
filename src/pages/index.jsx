@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
-import PropTypes from 'prop-types';
 import Layout from '../components/layout.jsx';
 
 /* Manually import each individual image for now. Eventually these
@@ -15,38 +14,6 @@ import pic05 from '../../assets/images/pic05.jpg';
 import pic06 from '../../assets/images/pic06.jpg';
 
 class Home extends React.Component {
-	constructor(props) {
-		super(props);
-	}
-
-	componentDidMount() {
-		// Add scripts to the page, starting with jquery, browser, and breakpoints. Because
-		// Main and util depend on jQuery, wait until it is fully loaded before adding these tags
-
-		const jQuery = document.createElement('script');
-		document.body.appendChild(jQuery);
-
-		jQuery.onload = () => {
-			const main = document.createElement('script');
-			const utils = document.createElement('script');
-
-			main.src = '/js/main.js';
-			utils.src = '/js/util.js';
-			document.body.appendChild(main);
-			document.body.appendChild(utils);
-
-		}
-		jQuery.src = '/js/jquery.min.js';
-
-		const breakpoints = document.createElement('script');
-		const browser = document.createElement('script');
-
-		breakpoints.src = '/js/breakpoints.min.js';
-		browser.src = '/js/browser.min.js';
-		document.body.appendChild(breakpoints);
-		document.body.appendChild(browser);
-	}
-
 	render() {
 		return (
 			<Layout>
@@ -59,7 +26,16 @@ class Home extends React.Component {
 				<header id="header">
 					<Link to='/#' className="logo">Doran Walsten</Link>
 					<ul className="icons">
-						<li><a href="https://www.linkedin.com/in/doran-walsten-ba9714a5" className="icon fa-linkedin" target="_blank"><span className="label">LinkedIn</span></a></li>
+						<li>
+							<a
+								href="https://www.linkedin.com/in/doran-walsten-ba9714a5"
+								className="icon fa-linkedin"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<span className="label">LinkedIn</span>
+							</a>
+						</li>
 					</ul>
 				</header>
 
@@ -78,7 +54,15 @@ class Home extends React.Component {
 								<span className="image" style={{ width: '75%', margin: '0 auto 32px auto' }}>
 									<img src={kibuye} alt="" />
 								</span>
-								<h5 className="align-center"><a href="https://en.wikipedia.org/wiki/Kibuye,_Rwanda" target="_blank">Kibuye, Rwanda</a></h5>
+								<h5 className="align-center">
+									<a
+										href="https://en.wikipedia.org/wiki/Kibuye,_Rwanda"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										Kibuye, Rwanda
+									</a>
+								</h5>
 							</div> 
 						</div>
 					</div>
@@ -128,51 +112,51 @@ class Home extends React.Component {
 					</header>
 					<div className="posts">
 						<article>
-							<a href="#" className="image"><img src={pic01} alt="" /></a>
+							<a href="/#" className="image"><img src={pic01} alt="" /></a>
 							<h3>Interdum aenean</h3>
 							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 							<ul className="actions">
-								<li><a href="#" className="button">More</a></li>
+								<li><a href="/#" className="button">More</a></li>
 							</ul>
 						</article>
 						<article>
-							<a href="#" className="image"><img src={pic02} alt="" /></a>
+							<a href="/#" className="image"><img src={pic02} alt="" /></a>
 							<h3>Nulla amet dolore</h3>
 							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 							<ul className="actions">
-								<li><a href="#" className="button">More</a></li>
+								<li><a href="/#" className="button">More</a></li>
 							</ul>
 						</article>
 						<article>
-							<a href="#" className="image"><img src={pic03} alt="" /></a>
+							<a href="/#" className="image"><img src={pic03} alt="" /></a>
 							<h3>Tempus ullamcorper</h3>
 							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 							<ul className="actions">
-								<li><a href="#" className="button">More</a></li>
+								<li><a href="/#" className="button">More</a></li>
 							</ul>
 						</article>
 						<article>
-							<a href="#" className="image"><img src={pic04} alt="" /></a>
+							<a href="/#" className="image"><img src={pic04} alt="" /></a>
 							<h3>Sed etiam facilis</h3>
 							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 							<ul className="actions">
-								<li><a href="#" className="button">More</a></li>
+								<li><a href="/#" className="button">More</a></li>
 							</ul>
 						</article>
 						<article>
-							<a href="#" className="image"><img src={pic05} alt="" /></a>
+							<a href="/#" className="image"><img src={pic05} alt="" /></a>
 							<h3>Feugiat lorem aenean</h3>
 							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 							<ul className="actions">
-								<li><a href="#" className="button">More</a></li>
+								<li><a href="/#" className="button">More</a></li>
 							</ul>
 						</article>
 						<article>
-							<a href="#" className="image"><img src={pic06} alt="" /></a>
+							<a href="/#" className="image"><img src={pic06} alt="" /></a>
 							<h3>Amet varius aliquam</h3>
 							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 							<ul className="actions">
-								<li><a href="#" className="button">More</a></li>
+								<li><a href="/#" className="button">More</a></li>
 							</ul>
 						</article>
 					</div>
