@@ -11,8 +11,9 @@ jobs:
     name: Lint Check
     runs-on: ubuntu-latest
     steps:
-      - name: Setup
+      - name: Checkout code
         uses: actions/checkout@v2
+      - name: Install Dependencies
         run: yarn install
       - name: Run Linter
         run: yarn lint
