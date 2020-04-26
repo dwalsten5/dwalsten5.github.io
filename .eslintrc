@@ -2,5 +2,18 @@
 	"extends":"airbnb",
   "rules": {
     "import/extensions": ["error", "always"]
+  },
+  "globals": {
+    "document": "readonly",
+    "jQuery": "readonly",
+    "window": "readonly"
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": [
+        ["assets", "./assets"],
+        ["components", "./src/components"]
+      ]
+    }
   }
 }

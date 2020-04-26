@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Sidebar from './sidebar.jsx';
-import '../../assets/css/main.css';
+import 'assets/css/main.css';
 
 /**
 Top level basic layout for the site. Includes a sidebar for navigation on the left

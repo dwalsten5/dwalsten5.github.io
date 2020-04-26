@@ -2,6 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 
+import pic07 from 'assets/images/pic07.jpg';
+import pic08 from 'assets/images/pic08.jpg';
+import pic09 from 'assets/images/pic09.jpg';
+
 const Sidebar = ({ routes }) => (
   <div id="sidebar">
     <div className="inner">
@@ -20,15 +24,15 @@ const Sidebar = ({ routes }) => (
         </header>
         <div className="mini-posts">
           <article>
-            <a href="/#" className="image" aria-label="Link"><img src="images/pic07.jpg" alt="" /></a>
+            <a href="/#" className="image" aria-label="Link"><img src={pic07} alt="" /></a>
             <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
           </article>
           <article>
-            <a href="/#" className="image" aria-label="Link"><img src="images/pic08.jpg" alt="" /></a>
+            <a href="/#" className="image" aria-label="Link"><img src={pic08} alt="" /></a>
             <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
           </article>
           <article>
-            <a href="/#" className="image" aria-label="Link"><img src="images/pic09.jpg" alt="" /></a>
+            <a href="/#" className="image" aria-label="Link"><img src={pic09} alt="" /></a>
             <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
           </article>
         </div>
