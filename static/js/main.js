@@ -7,6 +7,7 @@
 (function($) {
 
 	var	$window = $(window),
+		$document = $(document),
 		$head = $('head'),
 		$body = $('body');
 
@@ -35,7 +36,6 @@
 			var resizeTimeout;
 
 			$window.on('resize', function() {
-
 				// Mark as resizing.
 					$body.addClass('is-resizing');
 
@@ -167,8 +167,7 @@
 		// Note: If you do anything to change the height of the sidebar's content, be sure to
 		// trigger 'resize.sidebar-lock' on $window so stuff doesn't get out of sync.
 
-			$window.on('load.sidebar-lock', function() {
-
+			$document.ready(function() {
 				var sh, wh, st;
 
 				// Reset scroll position to 0 if it's 1.
@@ -177,7 +176,6 @@
 
 				$window
 					.on('scroll.sidebar-lock', function() {
-
 						var x, y;
 
 						// <=large? Bail.
@@ -221,7 +219,6 @@
 
 					})
 					.on('resize.sidebar-lock', function() {
-
 						// Calculate heights.
 							wh = $window.height();
 							sh = $sidebar_inner.outerHeight() + 30;

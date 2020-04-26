@@ -1,0 +1,19 @@
+name: Basic Tests
+# Trigger on pull requests into develop
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  # Verify the project passes the linter
+  lint:
+    name: Lint Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: yarn install
+      - name: Run Linter
+        run: yarn lint
