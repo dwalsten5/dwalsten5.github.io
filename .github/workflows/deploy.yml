@@ -1,0 +1,33 @@
+name: Deploy
+# Trigger on commits to develop, which will then deploy to master
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the repo
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      # Simply run the Gatsby build
+      - name: Install and Build
+        run: |
+          yarn install
+          yarn build
+          cp CNAME ./public/CNAME
+
+
+      # Use a public action to deploy to GitHub pages on master
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: master
+          FOLDER: public
+          SINGLE_COMMIT: true # Use develop branch for history
