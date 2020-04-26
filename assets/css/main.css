@@ -8,7 +8,7 @@
 */
 
 :root {
-	--main-accent-color: #68ACE5; /* GO HOP */
+	--main-accent-color: #68ACE5; /* GO HOP, RGB: 104, 172, 229 */
 }
 
 html, body, div, span, applet, object,
@@ -2489,7 +2489,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: rgba(245, 106, 106, 0.05);
+			background-color: rgba(104, 172, 229, 0.05);
 		}
 
 		input[type="submit"]:active,
@@ -2497,7 +2497,7 @@ input, select, textarea {
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: rgba(245, 106, 106, 0.15);
+			background-color: rgba(104, 172, 229, 0.15);
 		}
 
 		input[type="submit"].icon:before,
