@@ -2,9 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 
-import pic07 from 'assets/images/pic07.jpg';
-import pic08 from 'assets/images/pic08.jpg';
-import pic09 from 'assets/images/pic09.jpg';
+// Remove images while not in use
+// import pic07 from 'assets/images/pic07.jpg';
+// import pic08 from 'assets/images/pic08.jpg';
+// import pic09 from 'assets/images/pic09.jpg';
 
 const Sidebar = ({ routes }) => (
   <div id="sidebar">

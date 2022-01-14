@@ -44,7 +44,10 @@ const Home = () => (
           <h1>{'Hi, I\'m Doran Walsten'}</h1>
           <p>Work in progress</p>
         </header>
-        <p>{'Welcome to my personal website! Much like this website, I am a work in progress. Stay tuned for future updates.'}</p>
+        <p>
+          Welcome to my personal website! Much like this website,
+          I am a work in progress.Stay tuned for future updates.
+        </p>
       </div>
       <div className="content">
         <div className="row aln-center m0">
