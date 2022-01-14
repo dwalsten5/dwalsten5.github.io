@@ -6,12 +6,13 @@ import Layout from 'components/layout.jsx';
 /* Manually import each individual image for now. Eventually these
 will be tied to a database of some sort */
 import kibuye from 'assets/images/Kibuye_low_res.jpg';
-import pic01 from 'assets/images/pic01.jpg';
-import pic02 from 'assets/images/pic02.jpg';
-import pic03 from 'assets/images/pic03.jpg';
-import pic04 from 'assets/images/pic04.jpg';
-import pic05 from 'assets/images/pic05.jpg';
-import pic06 from 'assets/images/pic06.jpg';
+// Remove unused images
+// import pic01 from 'assets/images/pic01.jpg';
+// import pic02 from 'assets/images/pic02.jpg';
+// import pic03 from 'assets/images/pic03.jpg';
+// import pic04 from 'assets/images/pic04.jpg';
+// import pic05 from 'assets/images/pic05.jpg';
+// import pic06 from 'assets/images/pic06.jpg';
 
 const Home = () => (
   <Layout>
@@ -42,9 +43,12 @@ const Home = () => (
       <div className="content">
         <header>
           <h1>{'Hi, I\'m Doran Walsten'}</h1>
-          <p>A Foolish Mortal</p>
+          <p>Work in progress</p>
         </header>
-        <p>{'Welcome to my personal website. I am not really sure what my goal for this is yet, but that\'s part of the fun! At the moment, I am a Midwest transplant in Los Angeles trying to figure out what to do with my life and enjoy the journey along the way.'}</p>
+        <p>
+          Welcome to my personal website! Much like this website,
+          I am a work in progress.Stay tuned for future updates.
+        </p>
       </div>
       <div className="content">
         <div className="row aln-center m0">
@@ -66,7 +70,8 @@ const Home = () => (
       </div>
     </section>
 
-    { /* Section */ }
+    { /* Section: Removing until ready */ }
+    { /**
     <section>
       <header className="major">
         <h2>Erat lacinia</h2>
@@ -113,9 +118,10 @@ const Home = () => (
           </div>
         </article>
       </div>
-    </section>
+    </section> */ }
 
-    { /* Section */ }
+    { /* Section: Removing until ready */ }
+    { /**
     <section>
       <header className="major">
         <h2>Ipsum sed dolor</h2>
@@ -188,7 +194,7 @@ const Home = () => (
           </ul>
         </article>
       </div>
-    </section>
+    </section> */ }
   </Layout>
 );
 

@@ -2,9 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 
-import pic07 from 'assets/images/pic07.jpg';
-import pic08 from 'assets/images/pic08.jpg';
-import pic09 from 'assets/images/pic09.jpg';
+// Remove images while not in use
+// import pic07 from 'assets/images/pic07.jpg';
+// import pic08 from 'assets/images/pic08.jpg';
+// import pic09 from 'assets/images/pic09.jpg';
 
 const Sidebar = ({ routes }) => (
   <div id="sidebar">
@@ -17,7 +18,8 @@ const Sidebar = ({ routes }) => (
           {routes.map(({ title, slug }) => <li key={slug}><Link to={slug}>{title}</Link></li>)}
         </ul>
       </nav>
-      { /** Post Highilights */ }
+      { /** Post Highilights: Disabled until ready */ }
+      { /**
       <section>
         <header className="major">
           <h2>Ante interdum</h2>
@@ -39,7 +41,7 @@ const Sidebar = ({ routes }) => (
         <ul className="actions">
           <li><a href="/#" className="button" aria-label="Link">More</a></li>
         </ul>
-      </section>
+      </section> */ }
 
       { /** Footer with copyright, credits */ }
       <footer id="footer">

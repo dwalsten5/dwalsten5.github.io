@@ -15,14 +15,17 @@ const Layout = ({ children }) => {
       title: 'Home',
       slug: '/#',
     },
-    {
-      title: 'Projects',
-      slug: '/projects',
-    },
-    {
-      title: 'Another',
-      slug: '/another',
-    },
+    /**
+     * Disable future pages until ready
+     */
+    // {
+    //   title: 'Projects',
+    //   slug: '/projects',
+    // },
+    // {
+    //   title: 'Another',
+    //   slug: '/another',
+    // },
   ];
 
   return (

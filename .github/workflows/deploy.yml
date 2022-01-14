@@ -18,8 +18,8 @@ jobs:
       # Simply run the Gatsby build
       - name: Install and Build
         run: |
-          yarn install
-          yarn build
+          npm install
+          npm run build
           cp CNAME ./public/CNAME
 
 
