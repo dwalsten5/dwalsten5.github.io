@@ -25,7 +25,7 @@ jobs:
 
       # Use a public action to deploy to GitHub pages on master
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases@v4.2.2
+        uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: master
