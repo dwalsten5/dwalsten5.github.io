@@ -17,7 +17,8 @@ const Sidebar = ({ routes }) => (
           {routes.map(({ title, slug }) => <li key={slug}><Link to={slug}>{title}</Link></li>)}
         </ul>
       </nav>
-      { /** Post Highilights */ }
+      { /** Post Highilights: Disabled until ready */ }
+      { /**
       <section>
         <header className="major">
           <h2>Ante interdum</h2>
@@ -39,7 +40,7 @@ const Sidebar = ({ routes }) => (
         <ul className="actions">
           <li><a href="/#" className="button" aria-label="Link">More</a></li>
         </ul>
-      </section>
+      </section> */ }
 
       { /** Footer with copyright, credits */ }
       <footer id="footer">

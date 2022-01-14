@@ -66,7 +66,8 @@ const Home = () => (
       </div>
     </section>
 
-    { /* Section */ }
+    { /* Section: Removing until ready */ }
+    { /**
     <section>
       <header className="major">
         <h2>Erat lacinia</h2>
@@ -113,9 +114,10 @@ const Home = () => (
           </div>
         </article>
       </div>
-    </section>
+    </section> */ }
 
-    { /* Section */ }
+    { /* Section: Removing until ready */ }
+    { /**
     <section>
       <header className="major">
         <h2>Ipsum sed dolor</h2>
@@ -188,7 +190,7 @@ const Home = () => (
           </ul>
         </article>
       </div>
-    </section>
+    </section> */ }
   </Layout>
 );
 
